@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="Démo exercice (placeholder)">
+  <defs>
+    <pattern id="stripes2" width="20" height="20" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#161d29"/>
+      <rect width="10" height="20" fill="#131922"/>
+    </pattern>
+  </defs>
+  <rect width="320" height="200" rx="16" fill="url(#stripes2)" stroke="rgba(255,255,255,0.09)"/>
+  <circle cx="160" cy="96" r="30" fill="#5fe3f0"/>
+  <path d="M152 82 L152 110 L176 96 Z" fill="#06222a"/>
+  <text x="14" y="184" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" letter-spacing="1.4" fill="#5a6273">VIDÉO HD · DÉMONSTRATION</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Avatar coach (placeholder)">
+  <circle cx="60" cy="60" r="60" fill="#171c27"/>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#5fe3f0" stroke-width="2"/>
+  <circle cx="60" cy="48" r="20" fill="#5a6273"/>
+  <path d="M28 98 C28 76 44 70 60 70 C76 70 92 76 92 98 Z" fill="#5a6273"/>
+</svg>

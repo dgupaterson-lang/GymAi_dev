@@ -1,0 +1,9 @@
+"""Configuration de l'app gyms."""
+from django.apps import AppConfig
+
+
+class GymsConfig(AppConfig):
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "apps.gyms"
+    label = "gyms"
+    verbose_name = "Salles"

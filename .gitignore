@@ -1,0 +1,56 @@
+# ===== Dépôts imbriqués parasites (artefacts d'essais) — ne pas versionner =====
+/GymAi/
+/GymAi_dev/
+
+# ===== Dépendances =====
+node_modules/
+**/node_modules/
+
+# ===== Python / Django =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+**/.venv/
+db.sqlite3
+db.sqlite3-journal
+/backend/media/
+/backend/staticfiles/
+
+# ===== Secrets & environnement =====
+.env
+**/.env
+!.env.example
+*.pem
+*.key
+*.p12
+*.p8
+*.jks
+*.mobileprovision
+
+# ===== Builds / caches =====
+dist/
+**/dist/
+web-build/
+*.tsbuildinfo
+.vite/
+**/.vite/
+
+# ===== Expo =====
+.expo/
+**/.expo/
+expo-env.d.ts
+/mobile/ios/
+/mobile/android/
+
+# ===== Outils / OS =====
+.claude/
+**/.claude/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*

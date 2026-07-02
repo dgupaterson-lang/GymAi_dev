@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Masque les barres de défilement des zones scrollables (cf. [data-scroll] de la maquette) */
+[data-scroll] {
+  scrollbar-width: none;
+}
+[data-scroll]::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Effets de survol — équivalents des attributs style-hover de la maquette */
+.dc-hover-bright:hover {
+  filter: brightness(1.07);
+}
+.dc-hover-border:hover {
+  border-color: var(--accent) !important;
+}
+.dc-hover-accent:hover {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+}
+.dc-hover-border-txt:hover {
+  border-color: var(--accent) !important;
+  color: var(--txt) !important;
+}
+
+/* Police d'icônes Material Symbols */
+.msr {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}

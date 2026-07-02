@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" role="img" aria-label="Athlète à l'entraînement">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#13202b"/>
+      <stop offset="70%" stop-color="#0e1620"/>
+      <stop offset="100%" stop-color="#080a10"/>
+    </linearGradient>
+    <radialGradient id="aglow" cx="50%" cy="22%" r="42%">
+      <stop offset="0%" stop-color="#5fe3f0" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#5fe3f0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="760" fill="url(#bg)"/>
+  <circle cx="300" cy="180" r="240" fill="url(#aglow)"/>
+
+  <!-- Silhouette athlète (presse haltère au-dessus de la tête) -->
+  <g stroke="#28394a" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- jambes -->
+    <path d="M276,430 L268,560 L268,648"/>
+    <path d="M324,430 L332,560 L332,648"/>
+    <!-- bras levés -->
+    <path d="M272,262 L242,202 L262,152"/>
+    <path d="M328,262 L358,202 L338,152"/>
+  </g>
+  <!-- torse -->
+  <path d="M258,250 L342,250 L330,432 Q300,452 270,432 Z" fill="#2c3d4f"/>
+  <!-- tête -->
+  <circle cx="300" cy="200" r="42" fill="#2c3d4f"/>
+
+  <!-- barre + disques (accent) -->
+  <g>
+    <rect x="196" y="143" width="208" height="14" rx="7" fill="#5fe3f0"/>
+    <rect x="180" y="128" width="20" height="44" rx="7" fill="#5fe3f0"/>
+    <rect x="400" y="128" width="20" height="44" rx="7" fill="#5fe3f0"/>
+    <rect x="166" y="136" width="16" height="28" rx="6" fill="#9d8cff"/>
+    <rect x="418" y="136" width="16" height="28" rx="6" fill="#9d8cff"/>
+  </g>
+</svg>

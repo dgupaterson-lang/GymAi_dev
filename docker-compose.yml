@@ -1,0 +1,40 @@
+# Infra de développement GymAI : Postgres 16 + Redis 7.
+# Usage : docker compose up -d db redis
+# Le backend Django se lance hors conteneur (cf backend/README.md).
+
+services:
+  db:
+    image: postgres:16
+    container_name: gymai-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gymai
+      POSTGRES_PASSWORD: gymai
+      POSTGRES_DB: gymai
+    ports:
+      - "5432:5432"
+    volumes:
+      - gymai_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gymai"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7
+    container_name: gymai-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - gymai_redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  gymai_pgdata:
+  gymai_redisdata:

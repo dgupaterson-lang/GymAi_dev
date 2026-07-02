@@ -1,0 +1,21 @@
+# --- Core ---
+Django==5.1.6
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+drf-spectacular==0.28.0
+django-cors-headers==4.6.0
+python-dotenv==1.0.1
+dj-database-url==2.3.0
+
+# --- Base de données ---
+psycopg[binary]==3.2.4
+
+# --- Tâches asynchrones / temps réel (préparé pour les sprints suivants) ---
+celery==5.4.0
+redis==5.2.1
+channels==4.2.0
+channels-redis==4.2.1
+daphne==4.1.2
+
+# --- Médias ---
+Pillow==11.1.0

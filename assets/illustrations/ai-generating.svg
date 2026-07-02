@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220" role="img" aria-label="Génération IA">
+  <defs>
+    <radialGradient id="ig" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5fe3f0" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#5fe3f0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="110" cy="110" r="100" fill="url(#ig)"/>
+  <!-- anneau de base -->
+  <circle cx="110" cy="110" r="60" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="10"/>
+  <!-- arc accent (instantané du spinner ; animer la rotation côté app) -->
+  <path d="M110 50 A60 60 0 0 1 170 110" fill="none" stroke="#5fe3f0" stroke-width="10" stroke-linecap="round"/>
+  <!-- étincelle IA -->
+  <g fill="#5fe3f0">
+    <path d="M110 92 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6 z"/>
+  </g>
+</svg>
